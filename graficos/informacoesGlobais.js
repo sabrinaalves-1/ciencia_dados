@@ -5,7 +5,7 @@ async function visualizarInformacoesGlobais() {
 
     const resposta = await fetch(url)
 
-    const dados = await resposta.jason()
+    const dados = await resposta.json()
 
     const pessoasMundo = (dados.total_pessoas_mundo/1e9)
     const trabalhadoresMundo = (dados.total_trabalhadores_mundo/1e9)
